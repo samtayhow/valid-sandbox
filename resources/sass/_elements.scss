@@ -1,0 +1,56 @@
+body {
+    line-height: $line-height-base;
+    font-size: 16px;
+    font-family: $font-family-sans-serif;
+    background-color: $gray;
+}
+form {
+    padding: 2rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $blue;
+}
+
+h1 {
+    font-size:$size-large;
+    text-align: center;
+}
+
+label, input, select, textarea {
+    display: block;
+    width: 100%;
+}
+header, main {
+    background-color: $white;
+    width:100%;
+}
+header {
+    border-bottom:1px solid $gray;
+    padding:1rem;
+}
+input[type="submit"], input[type="submit"]:focus{
+    background-color: $blue;
+    padding: 1em;
+    border: none;
+    border-radius: $rounded-size;
+    color: $white;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+input, select, option, textarea {
+    border: 0;
+    margin: 0.25em 0 0.25em 0;
+    @include border-top-radius($rounded-size);
+}
+input,textarea, select{
+    padding: 1rem;
+}
+input:focus {
+    color: $black;
+}
+main {
+    max-width:992px;
+}
+textarea {
+    min-height: 6em;
+}

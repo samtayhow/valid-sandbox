@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.disclaimer {
+    font-size: $size-small;
+    color: $gray-text;
+    margin-top: 2rem;
+}
+.error {
+    color:$rust;
+    background-color: $pink;
+    margin-bottom: 0;
+}
+.flag {
+    background-color: $rust;
+    color: $white;
+    font-size: $size-tiny;
+    padding: 0.5em;
+    @include border-bottom-radius($rounded-size);
+    display: none;
+}
+.form-group {
+    margin-bottom: 1em;
+    display:inline-block;
+    width:100%;
+}
+.visible {
+    display: block;
+}
+.required {
+    color: $rust;
+}
+.success {
+    border-radius: $rounded-size;
+    border: 1px solid $green;
+    background-color: $green-light;
+    margin: 5rem;
+    padding: 1rem;
+}
